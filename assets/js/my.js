@@ -126,7 +126,7 @@ function skmk() {
         data: {
             "emailAddress": field1,
             "entry.1772614936": field2,
-            "entry.374747839": field3,
+            "entry.374747839": "'" + field3,
             "entry.1605480138": field4,
             "entry.296533861": field5,
             "entry.262943577": field6,
@@ -146,4 +146,29 @@ function skmk() {
         }
     });
     return false;
+}
+
+var rupiah = document.getElementById("nim");
+rupiah.addEventListener('keyup', function (e) {
+    // tambahkan 'Rp.' pada saat form di ketik
+    // gunakan fungsi formatRupiah() untuk mengubah angka yang di ketik menjadi format angka
+    rupiah.value = formatRupiah(this.value, );
+});
+
+/* Fungsi formatRupiah */
+function formatRupiah(angka, prefix) {
+    var number_string = angka.replace(/[^,\d]/g, '').toString(),
+        split = number_string.split(','),
+        sisa = split[0].length % 4,
+        rupiah = split[0].substr(0, sisa),
+        ribuan = split[0].substr(sisa).match(/\d{4}/gi);
+
+    // tambahkan titik jika yang di input sudah menjadi angka ribuan
+    if (ribuan) {
+        separator = sisa ? '.' : '';
+        rupiah += separator + ribuan.join('.');
+    }
+
+    rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+    return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
 }
