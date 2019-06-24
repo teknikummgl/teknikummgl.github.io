@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
             <div class="container mt-2 mb-3">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <a href="index.html" class="brand-logo"><img src="assets/img/logo/ft.png"
+                <a href="../index.html" class="brand-logo"><img src="../assets/img/logo/ft.png"
                         style="width:200px; height:30px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +34,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home </a>
+                            <a class="nav-link" href="../index.html">Home </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="berita.html">Berita <span class="sr-only">(current)</span> </a>
+                            <a class="nav-link" href="../berita.html">Berita <span class="sr-only">(current)</span> </a>
                         </li>
 
                         <li class="nav-item dropdown active">
@@ -46,20 +46,20 @@
                                 Formulir
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="form-kp.html">Formulir Kerja Praktik</a>
-                                <a class="dropdown-item" href="form-ta-skripsi.html">Formulir Skripsi-Tugas Akhir</a>
-                                <a class="dropdown-item" href="form-lain.html">Formulir Lainnya</a>
+                                <a class="dropdown-item" href="../form-kp.html">Formulir Kerja Praktik</a>
+                                <a class="dropdown-item" href="../form-ta-skripsi.html">Formulir Skripsi-Tugas Akhir</a>
+                                <a class="dropdown-item" href="../form-lain.html">Formulir Lainnya</a>
                             </div>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#prodi">Program Studi</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="download.html">Download</a>
+                            <a class="nav-link" href="../index.html#prodi">Program Studi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">Contact</a>
+                            <a class="nav-link" href="../download.html">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -81,61 +81,26 @@
                 <div class="col-md-12 mb-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title"> Formulir Kerja Praktik</h3>
+                            <h4 class="card-title"> FORMULIR PENDAFTARAN KERJA PRAKTIK</h4>
                         </div>
 
                         <div class="card-body">
 
                             <div class="row text-left">
 
-                                <div class="col-md-12 mb-4 ">
-                                    <a href="form-kp/form-kp-pendaftaran.html">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                FORMULIR PENDAFTARAN KERJA PRAKTIK
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                <div class="container">
 
-                                <div class="col-md-12 mb-4 ">
-                                    <a href="#">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                FORMULIR PENDAFTARAN KERJA PRAKTIK (Khusus Informatika S1)
-                                            </div>
+                                    <form id="success-msg" style="display:none">
+                                        <div class="card-panel center">
+                                            <h5>your message successfully sent</h5>
                                         </div>
-                                    </a>
-                                </div>
+                                    </form>
 
-                                <div class="col-md-12 mb-4 ">
-                                    <a href="#">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                FORMULIR PERPANJANGAN KERJA PRAKTIK
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                                    <form id="form" target="_self" onsubmit="return kp_pendaftaran();">
 
-                                <div class="col-md-12 mb-4 ">
-                                    <a href="#">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                FORMULIR PENGAJUAN SURAT PENGANTAR KERJA PRAKTIK
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
 
-                                <div class="col-md-12 mb-4 ">
-                                    <a href="#">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                FORMULIR PENDAFTARAN SEMINAR KERJA PRAKTIK
-                                            </div>
-                                        </div>
-                                    </a>
+                                    </form>
+
                                 </div>
 
                             </div>
@@ -162,6 +127,9 @@
     </footer>
 
     <!-- Optional JavaScript -->
+
+    <!--  -->
+    <script src="../assets/js/my.js" type="text/javascript"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
