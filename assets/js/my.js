@@ -122,18 +122,18 @@ function skmk() {
     }
 
     $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSdtzD1lr-7KeYc70ZFZvVmgdMx0kWhkmgAX3pS7yMmF5hxEQg/formResponse?",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSdWSIs-eySHq7gvwKibSKJEw_YEDWrIhxuVXS77dU6slxX5Kw/formResponse?",
         data: {
             "emailAddress": field1,
-            "entry.1772614936": field2,
-            "entry.374747839": "'" + field3,
-            "entry.1605480138": field4,
-            "entry.296533861": field5,
-            "entry.262943577": field6,
-            "entry.691409307": field7,
-            "entry.304546375": field8,
-            "entry.1014847203": field9,
-            "entry.805959753": field10
+            "entry.1200911178": field2,
+            "entry.870081300": "'" + field3,
+            "entry.943295338": field4,
+            "entry.1095564754": field5,
+            "entry.1157361213": field6,
+            "entry.243517237": field7,
+            "entry.443732615": field8,
+            "entry.1889240769": field9,
+            "entry.1772168235": field10
         },
         type: "POST",
         dataType: "xml",
